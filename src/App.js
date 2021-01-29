@@ -3,9 +3,7 @@ import cssLogo from './css-logo.svg';
 import jsLogo from './js-logo.svg';
 import './App.css';
 
-
-
-function App() {
+const animation = () =>{
   // Variables declaration and initialization
   const canvas = document.getElementById('canvas');
   const ctx = canvas.getContext('2d');
@@ -294,6 +292,13 @@ function App() {
   // Update canvas
   update();
 
+}
+
+setTimeout(animation, 500)
+
+
+function App() {
+  
   return (
     <div className="App">
       <div className="page-404-ml">
